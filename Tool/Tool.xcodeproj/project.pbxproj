@@ -15,6 +15,7 @@
 		65C7192023264F8400DC1291 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C7191F23264F8400DC1291 /* main.m */; };
 		65C7192A23264F8400DC1291 /* ToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C7192923264F8400DC1291 /* ToolTests.m */; };
 		65C7193523264F8500DC1291 /* ToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C7193423264F8500DC1291 /* ToolUITests.m */; };
+		65C7194A23273B0600DC1291 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C7194823273B0600DC1291 /* UIColor+Hex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,11 @@
 		65C7193023264F8500DC1291 /* ToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C7193423264F8500DC1291 /* ToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolUITests.m; sourceTree = "<group>"; };
 		65C7193623264F8500DC1291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65C7194523272C4F00DC1291 /* GSMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSMacro.h; sourceTree = "<group>"; };
+		65C719462327360100DC1291 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		65C7194823273B0600DC1291 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		65C7194923273B0600DC1291 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		65C7194B23273B2900DC1291 /* Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		65C7190F23264F8200DC1291 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				65C7194723273ACF00DC1291 /* Category */,
+				65C7194323272B3100DC1291 /* Macro */,
 				65C7191023264F8200DC1291 /* AppDelegate.h */,
 				65C7191123264F8200DC1291 /* AppDelegate.m */,
 				65C7191323264F8200DC1291 /* ViewController.h */,
@@ -110,6 +118,7 @@
 				65C7191B23264F8400DC1291 /* LaunchScreen.storyboard */,
 				65C7191E23264F8400DC1291 /* Info.plist */,
 				65C7191F23264F8400DC1291 /* main.m */,
+				65C719462327360100DC1291 /* PrefixHeader.pch */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -130,6 +139,24 @@
 				65C7193623264F8500DC1291 /* Info.plist */,
 			);
 			path = ToolUITests;
+			sourceTree = "<group>";
+		};
+		65C7194323272B3100DC1291 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				65C7194523272C4F00DC1291 /* GSMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		65C7194723273ACF00DC1291 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				65C7194B23273B2900DC1291 /* Category.h */,
+				65C7194923273B0600DC1291 /* UIColor+Hex.h */,
+				65C7194823273B0600DC1291 /* UIColor+Hex.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65C7191523264F8200DC1291 /* ViewController.m in Sources */,
+				65C7194A23273B0600DC1291 /* UIColor+Hex.m in Sources */,
 				65C7192023264F8400DC1291 /* main.m in Sources */,
 				65C7191223264F8200DC1291 /* AppDelegate.m in Sources */,
 			);
@@ -437,6 +465,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BRYJ6D7NN4;
+				GCC_PREFIX_HEADER = /Users/caoguosheng/ToolsProject/Tool/Tool/PrefixHeader.pch;
 				INFOPLIST_FILE = Tool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BRYJ6D7NN4;
+				GCC_PREFIX_HEADER = /Users/caoguosheng/ToolsProject/Tool/Tool/PrefixHeader.pch;
 				INFOPLIST_FILE = Tool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

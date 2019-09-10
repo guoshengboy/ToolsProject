@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  Tool
+//
+//  Created by caoguosheng on 2019/9/10.
+//  Copyright © 2019 caoguosheng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "GSMacro.h"
+#import "Category.h"
+
+#endif /* PrefixHeader_pch */
