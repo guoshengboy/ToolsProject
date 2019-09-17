@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CGSTools"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "基础东西"
 
   # This description is used to generate tags and improve search results.
@@ -89,7 +89,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "CGSTools"
+  spec.source_files  = "CGSTools","CGSTools/Category","CGSTools/Macro"
   spec.exclude_files = ""
 
   # spec.public_header_files = "Classes/**/*.h"
